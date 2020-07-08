@@ -1,0 +1,45 @@
+package com.javarush.task.task03.task0318;
+
+/* 
+План по захвату мира
+Ввести с клавиатуры число и имя, вывести на экран строку:
+"имя" захватит мир через "число" лет. Му-ха-ха!
+
+Пример:
+Вася захватит мир через 8 лет. Му-ха-ха!
+
+Последовательность вводимых данных имеет большое значение.
+
+
+Требования:
+1. Программа должна выводить текст.
+2. Программа должна считывать данные с клавиатуры.
+3. Выведенный текст должен содержать введенное имя.
+4. Выведенный текст должен содержать введенное число.
+5. Выведенный текст должен полностью соответствовать заданию.
+*/
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        //напишите тут ваш код
+      //  System.out.println("Введите число:");
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        String sAge = bufferedReader.readLine(); //читаем строку с клавиатуры
+
+   //     System.out.println("Введите имя:");
+        InputStream inputStream2 = System.in;
+        Reader inputStreamReader2 = new InputStreamReader(inputStream2);
+        BufferedReader bufferedReader2 = new BufferedReader(inputStreamReader2);
+        String name = bufferedReader2.readLine(); //читаем строку с клавиатуры
+
+        System.out.println(name+" захватит мир через "+sAge+" лет. Му-ха-ха!");
+
+
+
+    }
+}
